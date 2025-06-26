@@ -13,13 +13,16 @@
         android:theme="@style/Theme.BasicKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".DataActivity"
+            android:name=".activity.ObjectActivity"
             android:exported="false" />
         <activity
-            android:name=".MoveActivity"
+            android:name=".activity.DataActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MoveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

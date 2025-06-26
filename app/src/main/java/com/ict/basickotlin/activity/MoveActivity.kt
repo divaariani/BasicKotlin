@@ -1,10 +1,11 @@
-package com.ict.basickotlin
+package com.ict.basickotlin.activity
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.ict.basickotlin.R
 
 class MoveActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

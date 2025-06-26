@@ -1,11 +1,13 @@
-package com.ict.basickotlin
+package com.ict.basickotlin.activity
 
+import User
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.ict.basickotlin.R
 
 class MainActivity : AppCompatActivity(), View.OnClickListener  {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +26,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener  {
 
         val btnMoveWithDataActivity: Button = findViewById(R.id.btn_move_activity_data)
         btnMoveWithDataActivity.setOnClickListener(this)
+
+        val btnMoveWithObject:Button = findViewById(R.id.btn_move_activity_object)
+        btnMoveWithObject.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -38,6 +43,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener  {
                 moveWithDataIntent.putExtra(DataActivity.EXTRA_NAME, "Diva Ariani")
                 moveWithDataIntent.putExtra(DataActivity.EXTRA_AGE, 23)
                 startActivity(moveWithDataIntent)
+            }
+
+            R.id.btn_move_activity_object -> {
+                val person = User(
+                    "Diva Ariani",
+                    23,
+                    "divaariani@gmail.com",
+                    "Seoul"
+                )
+                val moveWithObjectIntent = Intent(this@MainActivity, ObjectActivity::class.java)
+                moveWithObjectIntent.putExtra(ObjectActivity.EXTRA_PERSON, person)
+                startActivity(moveWithObjectIntent)
             }
         }
     }
