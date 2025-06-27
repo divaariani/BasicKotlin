@@ -10,7 +10,6 @@
     android:gravity="center_horizontal"
     tools:context=".activity.MainActivity">
 
-
     <TextView
         android:id="@+id/hello"
         android:textStyle="bold"
@@ -62,7 +61,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_marginBottom="16dp"
         android:text="@string/result_from_activity"
         android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_move_activity_object_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/move_with_object_layout" />
 
 </LinearLayout>

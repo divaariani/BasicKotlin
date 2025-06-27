@@ -4,6 +4,7 @@
     <string name="move_activity">Move Activity</string>
     <string name="move_with_data">Move Activity with Data</string>
     <string name="move_with_object">Move Activity with Object</string>
+    <string name="move_with_object_layout">Move Activity with Object Layout</string>
     <string name="dial_number">Dial a Number</string>
     <string name="move_with_result">Move Activity for Result</string>
     <string name="result_from_activity">Result of the Activity</string>
@@ -16,4 +17,14 @@
     <string name="data_received">Data received</string>
     <string name="object_received">Object received</string>
     <string name="this_is_moveactivity">This MoveActivity</string>
+
+    <string name="specification">Spesifikasi</string>
+    <string name="display">Display</string>
+    <string name="size">Size</string>
+    <string name="battery">Battery</string>
+    <string name="seller">Dijual oleh</string>
+    <string name="buy">Beli</string>
+    <string name="dummy_photos">6 photos</string>
+
+    <string name="image_description">Image Desc</string>
 </resources>
