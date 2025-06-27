@@ -4,12 +4,8 @@ import Phone
 import android.os.Build
 import android.os.Bundle
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.ict.basickotlin.R
-import com.ict.basickotlin.activity.ObjectActivity.Companion.EXTRA_PERSON
 
 class ScrollActivity : AppCompatActivity() {
     companion object {
