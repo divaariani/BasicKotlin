@@ -36,7 +36,8 @@ class ScrollActivity : AppCompatActivity() {
 
         if (phone != null) {
             tvValue.text = phone.name
-            tvContentText.text = phone.name
+            val price = "$${phone.value}"
+            tvContentText.text = price
             contentSpecsDisplay.text = phone.specsDisplay
             contentSpecsSize.text = phone.specsSize
             contentSpecsBattery.text = phone.specsBattery
