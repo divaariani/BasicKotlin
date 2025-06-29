@@ -25,30 +25,26 @@
                 android:contentDescription="@string/image_description" />
 
             <TextView
+                style="@style/TextContent.BodyMedium.White.MarginAll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:layout_marginStart="16dp"
-                android:layout_marginBottom="16dp"
                 android:background="#4D000000"
                 android:drawablePadding="4dp"
                 android:gravity="center_vertical"
                 android:padding="8dp"
-                android:text="@string/dummy_photos"
-                android:textColor="@android:color/white" />
+                android:text="@string/dummy_photos" />
         </FrameLayout>
 
         <TextView
+            style="@style/TextContent.HeadlineMedium.Bold"
             android:id="@+id/tv_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="8dp"
-            android:textSize="32sp"
-            android:textStyle="bold"/>
+            android:layout_marginBottom="8dp" />
         <TextView
+            style="@style/TextContent.TitleMedium.Bold.MarginLeftRight"
             android:id="@+id/tv_content_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,6 +54,7 @@
             android:lineSpacingMultiplier="1" />
 
         <TextView
+            style="@style/TextContent.BodyMedium.Gray.MarginLeftRight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="12sp"
@@ -77,12 +74,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp">
                 <TextView
+                    style="@style/TextContent.BodyMedium.Bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:layout_marginEnd="16dp"
                     android:text="@string/display" />
                 <TextView
+                    style="@style/TextContent.BodyMedium.Gray"
                     android:id="@+id/content_specs_display"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -94,12 +93,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp">
                 <TextView
+                    style="@style/TextContent.BodyMedium.Bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:textSize="14sp"
                     android:text="@string/size" />
                 <TextView
+                    style="@style/TextContent.BodyMedium.Gray"
                     android:id="@+id/content_specs_size"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -111,12 +112,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp">
                 <TextView
+                    style="@style/TextContent.BodyMedium.Bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:textSize="14sp"
                     android:text="@string/battery" />
                 <TextView
+                    style="@style/TextContent.BodyMedium.Gray"
                     android:id="@+id/content_specs_battery"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -126,6 +129,7 @@
         </TableLayout>
 
         <TextView
+            style="@style/TextContent.TitleMedium.Bold.MarginLeftRight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="12sp"
@@ -149,6 +153,7 @@
                 android:src="@drawable/avatar"
                 android:contentDescription="@string/image_description" />
             <TextView
+                style="@style/TextContent.BodyMedium.Gray"
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -156,12 +161,10 @@
                 android:layout_toEndOf="@+id/profile_image" />
         </RelativeLayout>
         <Button
+            style="@style/ButtonGeneral.SecondaryVariant"
             android:text="@string/buy"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_height="wrap_content" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
